@@ -1,0 +1,44 @@
+<!--
+$fullname = $_POST['fullname'];
+$number = $_POST['number'];
+$orgname = $_POST['orgname'];
+$to = $_POST['to'];
+$position = $_POST['position'];
+$position_of_employer = $_POST['position_of_employer'];
+$address = $_POST['address'];
+$phone = $_POST['phone'];
+-->
+<!doctype html>
+<html lang="en" style="margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="margin: 0; padding: 0; width: 210mm; height: 297mm; background-color: white;">
+<div style="display: flex; flex-direction: column; align-items: flex-start; padding: 0 3em 3em 3em;">
+    <p>'. $orgname .'</p>
+    <p>'. $address .' ' . $phone . '</p>
+</div>
+<h3 style="text-align: center;">СПРАВКА №'. $number .'</h3>
+<div style="max-width: 50em; margin: 3em, 5em, 3em, 3em; padding-top: 6em;">
+    <p style="margin-left: 3em; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;">Дана '. $fullname .'</p>
+
+    <p style="">в том, что он (она) действительно работает в '. $orgname .'</p>
+    <p>в должности '. $position .'</p>
+
+    <p style="word-spacing: 5em; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;">Справка дана для предоставления </p>
+    <p>'. $to .'</p>
+
+</div>
+<div style="display: flex; flex-direction: row; justify-content: space-around;">
+    <p>'. $position_of_employer .'</p>
+    <div style="padding: -3.5em; padding-left: 30em;">
+        <p style="margin: 0; padding: 0; margin-top: 20px; text-align: center;">_________________</p>
+        <p style="text-align: center; font-size: 10px; margin: 0; padding: 0;">(личная подпись)</p>
+    </div>
+</div>
+</body>
+</html>

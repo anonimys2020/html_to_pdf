@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
-<!--    <script charset="utf-8" src="js/main.js"></script>-->
 </head>
 <body>
     <section class="form" id="form">
         <div class="container">
-            <h2 class="title">Заполнение сертификатов от GeekBrains</h2>
+            <h2 class="title">Заполнение документов</h2>
             <form action="html-pdf.php" method="POST" class="form">
-                <input type="text" name="name" class="input" placeholder="Введите ваше ФИО" required>
-                <input type="number" name="number" class="input" placeholder="Введите номер сертификата" required>
-                <input type="date" name="date" class="input" placeholder="Введите дату" required>
-                <input type="text" name="title" class="input" placeholder="Введите достижение" required>
+                <input type="text" name="fullname" class="input" placeholder="ФИО работодателя *" required>
+                <input type="number" name="number" class="input" placeholder="номер документа *" required>
+                <input type="text" name="orgname" class="input" placeholder="название организации *" required>
+                <input type="text" name="address" class="input" placeholder="адрес организации">
+                <input type="text" name="phone" class="input" placeholder="телефон">
+                <input type="text" name="to" class="input" placeholder="Справка предоставляется для *" required>
+                <input type="text" name="position_of_employer" class="input" placeholder="Наименование должности работодателя *" required>
+                <input type="text" name="position" class="input" placeholder="Наименование должности сотрудника *" required>
+                <input type="date" name="date" class="input" placeholder="Дата">
                 <button type="submit" class="btn">Отправить</button>
             </form>
         </div>
